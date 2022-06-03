@@ -39,16 +39,16 @@ const NavbarComponent = () => {
                             </Offcanvas.Header>
                             <Offcanvas.Body>
                                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                                    <Nav.Link href="http://localhost:3000/#ourService" className="fw-bold my-2 mx-2">
+                                    <Nav.Link href="https://challenge7-tim2-fe.herokuapp.com/#ourService" className="fw-bold my-2 mx-2">
                                         Our Service
                                     </Nav.Link>
-                                    <Nav.Link href="http://localhost:3000/#whyUs" className="fw-bold my-2 mx-2">
+                                    <Nav.Link href="https://challenge7-tim2-fe.herokuapp.com/#whyUs" className="fw-bold my-2 mx-2">
                                         Why Us
                                     </Nav.Link>
-                                    <Nav.Link href="http://localhost:3000/#testimonial" className="fw-bold my-2 mx-2">
+                                    <Nav.Link href="https://challenge7-tim2-fe.herokuapp.com/#testimonial" className="fw-bold my-2 mx-2">
                                         Testimonial
                                     </Nav.Link>
-                                    <Nav.Link href="http://localhost:3000/#faq" className="fw-bold my-2 mx-2">
+                                    <Nav.Link href="https://challenge7-tim2-fe.herokuapp.com/#faq" className="fw-bold my-2 mx-2">
                                         FAQ
                                     </Nav.Link>
                                     {!user ? (
