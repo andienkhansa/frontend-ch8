@@ -1,7 +1,7 @@
 import Swal from "sweetalert2";
 import {AUTH_ERROR, LOGIN, LOGOUT, REGISTER} from "./types";
 
-const {API_FILTER_CARS, API_LOGIN, API_REGISTER, API_OAUTH, API_AUTH_ME} = process.env;
+const {API_LOGIN, API_REGISTER, API_OAUTH, API_AUTH_ME} = process.env;
 
 export const loginViaForm = (data) => async (dispatch) => {
     try {

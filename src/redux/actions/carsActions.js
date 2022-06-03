@@ -1,11 +1,13 @@
 import Swal from "sweetalert2";
 import {GET_ALL_CARS, CARS_ERROR} from "./types";
 
+const {API_FILTER_CARS} = process.env;
+
 export const getAllCars = (params) => async (dispatch) => {
     try {
         const {tanggal, jam, penumpang} = params;
         const response = await fetch(
-            "http://localhost:8000/api/v1/cars?" +
+            API_FILTER_CARS +
                 new URLSearchParams({
                     time: tanggal,
                     date: jam,
