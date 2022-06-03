@@ -1,11 +1,11 @@
 import Swal from "sweetalert2";
 import {AUTH_ERROR, LOGIN, LOGOUT, REGISTER} from "./types";
 
-const {API_LOGIN, API_REGISTER, API_OAUTH, API_AUTH_ME} = process.env;
+const {REACT_APP_API_LOGIN, REACT_APP_API_REGISTER, REACT_APP_API_OAUTH, REACT_APP_API_AUTH_ME} = process.env;
 
 export const loginViaForm = (data) => async (dispatch) => {
     try {
-        const response = await fetch(API_LOGIN, {
+        const response = await fetch(REACT_APP_API_LOGIN, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -53,7 +53,7 @@ export const loginViaForm = (data) => async (dispatch) => {
 
 export const registerViaForm = (data) => async (dispatch) => {
     try {
-        const response = await fetch(API_REGISTER, {
+        const response = await fetch(REACT_APP_API_REGISTER, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -119,7 +119,7 @@ export const loginWithGoogle = (accessToken) => async (dispatch) => {
         const data = {
             access_token: accessToken,
         };
-        const response = await fetch(API_OAUTH, {
+        const response = await fetch(REACT_APP_API_OAUTH, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -166,7 +166,7 @@ export const loginWithGoogle = (accessToken) => async (dispatch) => {
 
 export const cekTokenExp = () => async (dispatch) => {
     try {
-        const response = await fetch(API_AUTH_ME, {
+        const response = await fetch(REACT_APP_API_AUTH_ME, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
